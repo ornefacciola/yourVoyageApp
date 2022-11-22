@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body.logBody{
+    background:linear-gradient(130deg, #003580, #00c6ff);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.login {
+    max-width: 1000px;
+    background:white;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+  
+.lContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+  
+.lInput{
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+
+}
+
+.titleLog{
+    color:black;
+    justify-content: center;
+    position: relative;
+    font-size: 30px;
+}
+
+.titleLog::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom:0;
+    height: 3px;
+    width: 30px;
+    background:linear-gradient(130deg, #003580, #00c6ff);
+}
+
+.lButton {
+    border: none;
+    padding: 10px 20px;
+    background-color: #0071c2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+  
+.lButton:disabled{
+    background-color: #0071c28c;
+    cursor: not-allowed;
+}
